@@ -6,10 +6,88 @@
     --black-color: #222222;
     --grey-text-color: #9C9C9C;
     --light-grey-text-color: #919191;
-    
-
 }
+
 body{
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* top purple bar */
+.top-bar {
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9375rem 2.5rem;
+    font-size: 0.875rem;
+}
+
+.top-bar a {
+    color: var(--pink-color);
+    text-decoration: underline;
+    margin-left: 0.3125rem;
+}
+
+.top-bar .social-icons a {
+    color: var(--secondary-color);
+    margin-left: 0.75rem;
+    font-size: 1rem;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 3.125rem;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo img {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin-right: 0.5rem;
+}
+
+/* nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* right side icons */
+.nav-icons a {
+    margin-left: 1.25rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-icons img {
+    width: 1.375rem;
+    height: 1.375rem;
 }
