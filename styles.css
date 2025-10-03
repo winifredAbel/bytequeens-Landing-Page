@@ -11,5 +11,72 @@
 }
 body{
     font-family: "Montserrat", sans-serif;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0; 
+    background-color: var(--primary-background-color);
+}
+
+.newsletter h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    width: 35%;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.newsletter h2 span {
+    color: var(--primary-color);
+}
+
+.newsletter p {
+    color: var(--grey-text-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.email-newspaper {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+}
+
+.email-newspaper input[type='email'] {
+    padding: 18px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    color: var(--grey-text-color);
+    width: 35%;
+    text-align: left;
+}
+
+.email-newspaper button {
+    padding: 18px 36px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.email-newspaper button:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
