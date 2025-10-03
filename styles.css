@@ -11,5 +11,352 @@
 }
 body{
     font-family: "Montserrat", sans-serif;
-    background-color: var(--primary-color);
+}
+
+
+.testimonials {
+    background: #F6F6F6;
+    padding: 3.75rem 0;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.testimonials-subtitle {
+    display: block;
+    color: #222222;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.625rem; 
+    letter-spacing: 0.125rem; 
+    text-transform: uppercase;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+.testimonials-header .highlight {
+    color: #5E00A6;
+}
+
+.testimonials-list {
+    display: flex;
+    gap: 1.700rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 1.125rem;
+    box-shadow: 0 0.25rem 1.5rem rgba(0,0,0,0.07); 
+    padding: 2rem 1.75rem; 
+    max-width: 30rem; 
+    flex: 1 1 18.75rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonial-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #f7b731;
+    margin-bottom: 0.75rem;
+}
+
+.rating-value {
+    color: #222222;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.testimonial-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0; 
+    color: #222222;
+}
+
+.testimonial-card p {
+    font-size: 0.8rem;
+    color: #919191;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.testimonial-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.125rem solid #222222;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    color: #222222;
+    font-size: 1rem;
+    display: block;
+}
+
+.testimonial-role {
+    font-size: 0.95rem;
+    color: #919191;
+    display: block;
+}
+
+.testimonial-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pagination-line {
+   display: inline-block;
+    width: 2rem;
+    height: 0.25rem;
+    background: #FFFFFF;
+    border-radius: 0.125rem;
+    margin: 0 0.125rem;
+    transition: background 0.3s;
+    vertical-align: middle;
+}
+
+.pagination-line.active {
+    background: #5E00A6;
+}
+
+/* Section Container for consistent margins */
+.section-container {
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 2rem;
+}
+
+.testimonials > .section-container,
+.blogs > .section-container {
+    /* Ensures both sections align horizontally */
+    width: 100%;
+}
+
+/* Blogs Header Flex Layout */
+.blogs {
+    background: #FFFFFF;
+    margin-top: 5rem;
+    padding: 3.75rem 0;
+}
+
+.blogs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.blogs-header-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blogs-subtitle {
+    color: #222;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    letter-spacing: 0.125rem;
+    text-transform: capitalize;
+}
+
+.blogs-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222222;
+    margin: 0;
+    text-align: left;
+}
+
+.blogs-header .highlight {
+    color: #5E00A6;
+}
+
+.blogs-view-all {
+    background: #5E00A6;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+    margin-left: 5rem;
+    white-space: nowrap;
+}
+
+.blogs-view-all:hover {
+    background: #FF90E9;
+    color: #222222
+}
+
+.blogs-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.blog-card {
+    background: #F6F6F6;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1.5rem rgba(0,0,0,0.07);
+    overflow: hidden;
+    max-width: 28rem;
+    min-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    box-shadow: 0 0.5rem 2rem rgba(94,0,166,0.12);
+}
+
+.blog-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-category {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    background: #5E00A6;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.35rem 1.75rem 0.35rem 0.75rem;
+    border-radius: 1rem 1rem 1rem 0;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(94,0,166,0.12);
+    overflow: visible;
+}
+
+.blog-card-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #222222;
+    margin: 0 0 0.5rem 0;
+}
+
+.blog-dot {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: #FF90E9;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blog-author {
+    font-weight: 500;
+}
+
+.blog-date {
+    color: #919191;
+}
+
+.blog-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222222;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.3;
+}
+
+.blog-read-more {
+    color: #5E00A6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    transition: color 0.2s;
+    align-self: flex-start;
+}
+
+.blog-read-more:hover {
+    color: #222222;
+}
+
+.occasions-bar {
+    background: var(--primary-color);
+    padding: 1rem 0;
+    margin-top: 3rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -40vw;
+}
+
+.occasions-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+.occasion-item {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.occasion-icon {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
 }
