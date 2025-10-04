@@ -6,19 +6,21 @@
     --black-color: #222222;
     --grey-text-color: #9C9C9C;
     --light-grey-text-color: #919191;
-    
-
 }
-body{
+
+body {
     font-family: "Montserrat", sans-serif;
 }
 
-/* deals of the day */
-.deals-of-the-day {
-    max-width: 1200px;
+.main-container {
+    max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+
+/* deals of the day */
 .deals-of-the-day-header {
     display: flex;
     justify-content: space-between;
@@ -67,9 +69,6 @@ body{
     align-items: flex-start;
     justify-content: center;
     gap: 50px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .deals-left {
