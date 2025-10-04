@@ -74,7 +74,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     position: fixed;
-    top: 3.5rem; /* height of .top-bar */
+    top: 3.5rem;
     left: 0;
     right: 0;
     background: var(--secondary-color);
@@ -668,11 +668,7 @@ h1 span {
     width: auto;
 }
 .Arrival-images{
-  background-color: #FFFFFF;<div class="icons">
-                            <span class="material-symbols-outlined">favorite</span> 
-                            <span class="material-symbols-outlined">arrows_output</span>
-                            <span class="material-symbols-outlined">shopping_bag</span>
-                        </div>
+  background-color: #FFFFFF;
   padding: 20px;
   width: fit-content;
 }
