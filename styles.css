@@ -311,3 +311,302 @@ h1 span {
     padding: 0;
 }
 
+    
+
+
+.occasion-container h1,
+.occasion-container h4 {
+  text-align: center;
+  margin: 0 auto 0.625rem; 
+}
+
+.occasion-container h4 {
+  font-weight: 400;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.occasion-container {
+  
+  max-width: 75rem; 
+  margin: 0 auto;
+  padding: 5rem; 
+  background-color: var(--secondary-color);
+  align-items: center;
+}
+
+
+.icon-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.25rem; 
+  padding-bottom: 0.625rem; 
+  scroll-behavior: smooth;
+}
+
+.icon-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.icon-card {
+  flex: 1;
+  background-color: white;
+  width: 100%;
+  margin: 1.6rem;
+}
+
+.icon-card img {
+  width: 10.5rem;  
+  height: 10.5rem; 
+}
+
+.icon-card span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3125rem; 
+}
+
+.icon-card small {
+  color: gray;
+  font-size: 0.75rem;
+}
+
+
+.promo-cards {
+  display: flex;
+  gap: 1.25rem; 
+  flex-wrap: wrap;
+  height: 20rem;
+  margin: 1rem;
+}
+
+.promo-content {
+  flex: 1;
+  min-width: 50%;
+  padding: 1rem 2rem; }
+
+.promo-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 0.98rem; 
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.promo-card.left {
+  background-color:var(--primary-background-color)
+}
+
+.promo-card.right {
+  background-color: #5E01A5
+}
+.promo-content h4 {
+ width: 100%;
+ border-radius: 1rem;                 
+}
+.promo-card.left h4 {
+  padding: 0.5rem 0.1rem ;
+  border: 2px solid var(--primary-background-color);
+  color:var(--black-color);
+  background-color: var(--secondary-color);
+}
+
+.promo-card.right h4 {
+  padding: 0.5rem 0.1rem ;
+  border: 2px solid #5E01A5; 
+  background-color: #691AAB;
+  color: var(--secondary-color);
+}
+
+.promo-card.left h2,
+.promo-card.left p,
+.promo-card.right h2,
+.promo-card.right p {
+  margin: 1rem 2rem;
+}
+.promo-card.left p, .promo-card.right p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #9C9C9C;
+}
+
+
+.promo-card button {
+  margin: 1rem 0.5rem;      
+  border: 2px solid transparent; 
+  border-radius: 2rem;
+  padding: 1rem 1.2rem;    
+}
+
+.promo-card.left button {
+  background-color:var(--primary-color);
+  color: var(--primary-background-color);             
+}
+
+.promo-card.right button {
+  background-color: var(--pink-color);
+  color: var(--black-color);  
+}
+
+
+.promo-card img {
+  width: 45%;
+  height: auto;
+  
+}
+
+
+
+.questions {
+  font-family: Arial, sans-serif;
+  background-color:var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.questions h3 {
+  color:var(--black-color);
+  font-weight: 400;
+}
+
+.questions h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+
+}
+
+.look{
+  color: var(--primary-color);
+}
+
+.promo-questions {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  width: 100%;
+}
+
+.faq-list {
+  flex: 1;
+  min-width: 22rem;
+  max-width: 36rem;
+}
+
+.faq-list p {
+  background-color: #f7f7f7;
+  padding: 1rem 3rem 1rem 1.2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.faq-list p:hover {
+  background-color: #ececec;
+}
+
+
+.faq-list p:nth-child(2) {
+  background-color: #5E00A6;
+  color: #fff;
+}
+
+
+.faq-list p::after {
+  content: "+";
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #8b2cff;
+  transition: 0.3s;
+}
+
+.faq-list p:nth-child(2)::after {
+  content: "–";
+  color: #fff;
+}
+
+
+.faq-list small {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+
+.contact-card {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  flex: 0 0 15rem;
+  text-align: center;
+  align-self: flex-start; 
+}
+
+.contact-card h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+}
+
+.contact-card p {
+  background: none;
+  margin-bottom: 1.2rem;
+  font-weight: normal;
+  padding: 0;
+  cursor: default;
+}
+
+.contact-card button {
+  background-color: #ff90e8;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;}
+
+.features {
+  padding: 1.9rem;
+  display: flex;
+  gap: 4rem;
+  text-align: center;
+  background-color: var(--primary-background-color);
+  justify-content: center;
+}
+
+
+.feature img {
+   float: left; 
+  width: 40px;
+  height: 40px;
+}
+
+.feature h3 {
+  margin: 0; 
+  font-size: 1em;
+  /* keeps paragraph on the same line if short */
+  white-space: nowrap; 
+}
+
+.feature p {
+  font-size: 0.7em;        
+  white-space: nowrap; 
+  color: #9C9C9C;    
+}
+
+
+
