@@ -394,7 +394,9 @@ h1 span {
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 0;
 }
+
 
 .promo-card.left {
   background-color:var(--primary-background-color)
@@ -553,24 +555,24 @@ h1 span {
   padding: 2rem 1.5rem;
   flex: 0 0 15rem;
   text-align: center;
-  align-self: flex-start; 
+  align-self: flex-start;
 }
 
 .contact-card h3 {
   margin-bottom: 0.6rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .contact-card p {
   background: none;
   margin-bottom: 1.2rem;
-  font-weight: normal;
   padding: 0;
-  cursor: default;
+  font-weight:0.5rem ;
+  white-space: nowrap; 
 }
 
 .contact-card button {
-  background-color: #ff90e8;
+  background-color: var(--pink-color);
   color: #fff;
   border: none;
   padding: 0.7rem 1.6rem;
