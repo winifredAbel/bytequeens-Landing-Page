@@ -532,12 +532,13 @@ h1 span {
 .right{
     background-color: var(--primary-background-color);
 }
-.holiday-sales{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 70px;
+.holiday-sales {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+  width: 100%;          
 }
 .left img{
     height: 500px;
@@ -673,17 +674,18 @@ h1 span {
   width: fit-content;
 }
 
-.product-card {
+/* .product-card {
       background: #fff;
       border-radius: 12px;
       padding: 16px;
       margin-left: 5px;
       width: 280px;
-      /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       position: relative;
       overflow: hidden;
-    }
+    } */
 
+    
 .discount-badge {
       position: absolute;
       top: 12px;
@@ -697,7 +699,7 @@ h1 span {
     }
 
 
-.product-image {
+/* .product-image {
       position: relative;
       text-align: center;
     }
@@ -705,7 +707,98 @@ h1 span {
 .product-image img {
       width: 200px;
       height: auto;
-    }
+    } */
+
+
+
+
+.product-container {
+  display: flex;
+  gap: 20px;         
+  justify-content: center; 
+  margin-top: 30px;
+  padding-left: 10px;
+  overflow-x: auto;
+
+}
+/* 
+  .product-card {
+    display: flex;  
+    width: 880px;
+    align-items: center;         
+    gap:20px;
+    } */
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  flex-shrink: 0; 
+  position: relative;
+  overflow: hidden;
+    display: flex;  
+    width: 450px;
+    align-items: center;         
+    gap:20px;
+
+}
+
+
+.product-image {
+  position: relative;
+  text-align: center;
+}
+
+.product-image img {
+  width: 200px;
+  height: 200px;
+}
+
+
+        /* background-color: var(--pink-color);
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    border-radius: 30px; */
+
+.discount-badge {
+
+ 
+  background-color: var(--pink-color);
+  color:#000;
+  font-weight: normal;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+
+}
+
+.product-actions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.action-btn {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product-details {
+  margin-top: 12px;
+
+}
+
 
 
     .product-actions {
@@ -746,13 +839,24 @@ h1 span {
 
     .product-details {
       margin-top: 12px;
+    font-weight: 500;
     
     }
+    .product-details h3{
+        font-weight: 500;
+    }
+    .product-details p{
+        font-weight: normal;
+    }
+    .price span{
+            font-weight: 500;
 
+     }
     .category {
       color: #888;
       font-size: 14px;
       margin: 0;
+      
     }
 
     .product-title {
@@ -807,47 +911,39 @@ h1 span {
       text-decoration: underline;
     }
 
-    .product-card {
-    display: flex;  
-    width: 480px;
-      align-items: center;         
-      gap:20px;
-    }
+  
     .product-image img{
         background-color: var(--primary-background-color);
         padding: 20px;
         border-radius: 10px;
     }
 
+
     .hero-banner {
-      margin-top: 70px;
+      margin-top: 70px ;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+
       background-color: var(--primary-color);
       border-radius: 20px;
-  
-      width: 1000px;
+      padding-left: 40px;
+      width: fit-content;
       color: #fff;
-      overflow: hidden;
-    }
-
- 
-    .weekly-deals {
-
-      padding-right: 20px;
 
     }
+
+
 
     .weekly-deals p {
       margin: 0;
-      font-size: 16px;
-      color: #e1c5ff;
+      font-size: 1.rem;
+      font-weight: 500;
+      color: var(--pink-color)
     }
 
     .weekly-deals h1 {
       font-size: 36px;
-      line-height: 1.2;
+            font-weight: 500;
       margin: 15px 0;
     }
 
@@ -878,12 +974,13 @@ h1 span {
 
 
     .hero-image {
-      flex: 1;
         justify-content: flex-end;
+         max-width: 500px;
+        
     }
 
     .hero-image img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
  
 
