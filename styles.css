@@ -726,8 +726,8 @@ h1 span {
 }
 
 .promo-card img {
-    width: 220px;
-    height: 420px;
+    width: 250px;
+    height: 450px !important;
     object-fit: cover;
 }
 
