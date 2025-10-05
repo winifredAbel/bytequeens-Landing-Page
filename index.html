@@ -3,181 +3,684 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Byte Flower Shop</title>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-         <section class="hero-section">
+    <!-- top purple bar -->
+    <div class="top-bar">
+        <span>Call Us : <b>+123-456-789</b></span>
+        <span>Sign up and <b>GET 20% OFF</b> for your first order. 
+            <a href="#">Sign up now</a>
+        </span>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener"><i class="fab fa-pinterest"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
 
-         </section>
-         <section class="occassions-section">
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/images/flower-logo.png" alt="Flower Shop logo">
+            <span>Flower Shop.</span>
+        </div>
 
-         </section>
-         <section class="about-us">
+        <!-- navigation links -->
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/occasions">Occasions</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+        </ul>
 
-         </section>
-          <section class="product-section">
+        <!-- right side icons -->
+        <div class="nav-icons">
+            <a href="#">
+                <img src="/images/search.png" alt="search icon">
+            </a>
+            <a href="#">
+                <img src="/images/heart.png" alt="heart icon">
+            </a>
+            <a href="#">
+                <img src="/images/basket.png" alt="basket icon">
+            </a>
+            <a href="#">
+                <img src="/images/person.png" alt="person icon">
+            </a>
+        </div>
+    </nav>
+    
+    <!-- main section -->
+    <main class="main-container">
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="hero-text">
+                <div class="hero-span-text">
+                    <span>
+                        <img src="/images/purple-rose.png" alt="purple rose icon">
+                        Your Trusted Online Flower Shop
+                    </span>
+                </div>
+
+                <h1>The Ultimate <span>Flower Shopping Destination</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inididunt ut labore et dolore.</p>
+
+                <div class="action-btns">
+                    <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                    <a href="/products">View All Products</a>
+                </div>
+
+                <div class="hero-ratings">
+                    <div class="avatars">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 2">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User 3">
+                        <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="User 4">
+                        
+                        <div class="more">+</div>
+                    </div>
+                    <div class="hero-ratings-text">
+                        <span class="rating">4.9+ Ratings</span>
+                        <span class="subtext">Trusted by 95k+ Customers</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="/images/hero.png" alt="hero image" class="main-img">
+
+                <!-- overlay content -->
+                <span class="tag tag-delivery">
+                    <i class="fa-solid fa-truck"></i>
+                    Fast Delivery
+                </span>
+
+                <span class="tag tag-payment">
+                    <i class="fa-solid fa-wallet"></i>
+                    Secure Payment
+                </span>
+
+                <img src="/images/hero-logo.png" alt="shop now logo" class="shop-now">
+            </div>
+        </section>
+        <!-- occasions section -->
+        <section class="occasions-section">
+            <h4>Occasions</h4>
+            <h2>Shop By <span class="highlight">Occasions</span></h2>
+
+            <div class="icon-slider">
+                <div class="icon-card">
+                    <img src="images/icon 1.png" alt="Weddings">
+                    <span>Weddings</span>
+                    <small>42 Products</small>
+                </div>
+                <div class="icon-card">
+                    <img src="images/icon 2.png" alt="Birthday">
+                    <span>Birthday</span>
+                    <small>56 Products</small>
+                </div>
+                <div class="icon-card">
+                    <img src="images/icon 3.png" alt="Anniversary">
+                    <span>Anniversary</span>
+                    <small>11 Products</small>
+                </div>
+                <div class="icon-card">
+                    <img src="images/icon 4.png" alt="Thank You">
+                    <span>Thank You</span>
+                    <small>48 Products</small>
+                </div>
+                <div class="icon-card">
+                    <img src="images/icon 5.png" alt="Graduation">
+                    <span>Graduation</span>
+                    <small>13 Products</small>
+                </div>
+                <div class="icon-card">
+                    <img src="images/icon 6.png" alt="Get Well Soon">
+                    <span>Get Well Soon</span>
+                    <small>16 Products</small>
+                </div>
+            </div>
+
+            <div class="promo-cards">
+                <div class="promo-card left">
+                    <div class="promo-content">
+                        <h4>Flat 20% Discount</h4>
+                        <h2>Lovely Fresh Bouquets</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <button>Shop Now →</button>
+                    </div>
+                    <img src="images/leftimage.png" alt="Bouquet">
+                </div>
+
+                <div class="promo-card right">
+                    <div class="promo-content">
+                        <h4>Flat 25% Discount</h4>
+                        <h2>Pure Bloom Collection</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <button>Shop Now  →</button>
+                    </div>
+                    <img src="images/rightimage.png" alt="Bloom">
+                </div>
+            </div>
+        </section>
+        <!-- about us section -->
+        <section class="about-us">
+
+        </section>
+        <!-- products section -->
+        <section class="product-section">
+        
+        </section>
+        <!-- new arrivals section -->
+        <section class="new-arrivals">
+        
+        </section>
+
+        <section class="occasions-bar">
+            <ul class="occasions-list">
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Birthday Icon" class="occasion-icon">
+                    <span>Birthday</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Weddings Icon" class="occasion-icon">
+                    <span>Weddings</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Anniversary Icon" class="occasion-icon">
+                    <span>Anniversary</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Thank You Icon" class="occasion-icon">
+                    <span>Thank You</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Graduation Icon" class="occasion-icon">
+                    <span>Graduation</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="End Icon" class="occasion-icon">
+                </li>
+            </ul>
+        </div>
+        </section>
+        <!-- deals of the day section -->
+        <section class="deals-of-the-day">
+            <div class="deals-of-the-day-header">
+                <div class="header-left">
+                    <h4>Best Seller</h4>
+                    <div class="deals-of-the-day-title">
+                        <h2><span>Deals</span> of the Day</h2>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                </div>
+            </div>
+            <div class="deals-main">
+                <div class="deals-left">
+                    <div class="deals-image">
+                        <img src="/images/promo-img.png" alt="Promo image">
+                        <div class="promo-overlay">
+                            <div class="deals-content">
+                                <h2>50% Off</h2>
+                                <p>06 DEC - 16 DEC</p>
+                                <a href="/shop" class="shop-btn">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-grid">
+                    <div class="deal-card">
+                        <div class="discount-icons">
+                            <span class="discount">50% off</span>
+                            <div class="card-icons">
+                                <img src="/images/heart.png" alt="heart icon">
+                                <img src="/images/zoom.png" alt="zoom icon">
+                                <img src="/images/shopping-bag.png" alt="shopping bag icon">
+                            </div>
+                        </div>
+                        <!-- card 1 -->
+                        <div class="deal-card-img">
+                            <img src="/images/flower1.png" alt="Rose Boutique" class="deals-img">
+                        </div>
+
+                        <div class="deals-info">
+                            <div class="heading-rating">
+                                <p class="category">Bouquets</p>
+                                <div class="star-rating">
+                                    <img src="/images/star.png" alt="rating star"> 4.8
+                                </div>
+                            </div>
+                            <h3>Rose Boutique</h3>
+                            <div class="price-rating">
+                                <span class="current-price">$35.00</span>
+                                <span class="old-price">$70.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="deal-card">
+                        <div class="discount-icons">
+                            <span class="discount">30% off</span>
+                            <div class="card-icons">
+                                <img src="/images/heart.png" alt="heart icon">
+                                <img src="/images/zoom.png" alt="zoom icon">
+                                <img src="/images/shopping-bag.png" alt="shopping bag icon">
+                            </div>
+                        </div>
+
+                        <div class="deal-card-img">
+                            <img src="/images/flower2.png" alt="Rose Bouquets" class="deals-img">
+                        </div>
+
+                        <div class="deals-info">
+                            <div class="heading-rating">
+                                <p class="category">Bouquets</p>
+                                <div class="star-rating">
+                                    <img src="/images/star.png" alt="rating star"> 4.9
+                                </div>
+                            </div>
+                            <h3>Rose Bouquets</h3>
+                            <div class="price-rating">
+                                <span class="current-price">$35.00</span>
+                                <span class="old-price">$50.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="deal-card">
+                        <div class="discount-icons">
+                            <span class="discount">20% off</span>
+                            <div class="card-icons">
+                                <img src="/images/heart.png" alt="heart icon">
+                                <img src="/images/zoom.png" alt="zoom icon">
+                                <img src="/images/shopping-bag.png" alt="shopping bag icon">
+                            </div>
+                        </div>
+
+                        <div class="deal-card-img">
+                            <img src="/images/flower3.png" alt="Flower Basket" class="deals-img">
+                        </div>
+
+                        <div class="deals-info">
+                            <div class="heading-rating">
+                                <p class="category">Basket</p>
+                                <div class="star-rating">
+                                    <img src="/images/star.png" alt="rating star"> 5.0
+                                </div>
+                            </div>
+                            <h3>Flower Basket</h3>
+                            <div class="price-rating">
+                                <span class="current-price">$80.00</span>
+                                <span class="old-price">$100.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="deal-card">
+                        <div class="discount-icons">
+                            <span class="discount">10% off</span>
+                            <div class="card-icons">
+                                <img src="/images/heart.png" alt="heart icon">
+                                <img src="/images/zoom.png" alt="zoom icon">
+                                <img src="/images/shopping-bag.png" alt="shopping bag icon">
+                            </div>
+                        </div>
+
+                        <div class="deal-card-img">
+                            <img src="/images/flower4.png" alt="Colorful Rose" class="deals-img">
+                        </div>
+
+                        <div class="deals-info">
+                            <div class="heading-rating">
+                                <p class="category">Bouquets</p>
+                                <div class="star-rating">
+                                    <img src="/images/star.png" alt="rating star"> 4.8
+                                </div>
+                            </div>
+                            <h3>Colorful Rose</h3>
+                            <div class="price-rating">
+                                <span class="current-price">$45.00</span>
+                                <span class="old-price">$50.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="deal-card">
+                        <div class="discount-icons">
+                            <span class="discount">50% off</span>
+                            <div class="card-icons">
+                                <img src="/images/heart.png" alt="heart icon">
+                                <img src="/images/zoom.png" alt="zoom icon">
+                                <img src="/images/shopping-bag.png" alt="shopping bag icon">
+                            </div>
+                        </div>
+
+                        <div class="deal-card-img">
+                            <img src="/images/flower5.png" alt="Pink Flowers" class="deals-img">
+                        </div>
+
+                        <div class="deals-info">
+                            <div class="heading-rating">
+                                <p class="category">Flowers</p>
+                                <div class="star-rating">
+                                    <img src="/images/star.png" alt="rating star"> 4.9
+                                </div>
+                            </div>
+                            <h3>Pink Flowers</h3>
+                            <div class="price-rating">
+                                <span class="current-price">$20.00</span>
+                                <span class="old-price">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="deal-card">
+                        <div class="discount-icons">
+                            <span class="discount">10% off</span>
+                            <div class="card-icons">
+                                <img src="/images/heart.png" alt="heart icon">
+                                <img src="/images/zoom.png" alt="zoom icon">
+                                <img src="/images/shopping-bag.png" alt="shopping bag icon">
+                            </div>
+                        </div>
+
+                        <div class="deal-card-img">
+                            <img src="/images/flower6.png" alt="Rose Bouquets" class="deals-img">
+                        </div>
+
+                        <div class="deals-info">
+                            <div class="heading-rating">
+                                <p class="category">Bouquets</p>
+                                <div class="star-rating">
+                                    <img src="/images/star.png" alt="rating star"> 4.8
+                                </div>
+                            </div>
+                            <h3>Rose Bouquets</h3>
+                            <div class="price-rating">
+                                <span class="current-price">$90.00</span>
+                                <span class="old-price">$100.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-         </section>
-          <section class="new-arrivals">
-            
-         </section>
-          <section class="deals-of-the-day">
-            
-         </section>
-          <section class="testimonials">
+        </section>
+        <!-- testimonials section -->
+        <section class="testimonials">
             <div class="section-container"></div>
             <div class="testimonials-header">
-        <span class="testimonials-subtitle">Testimonial</span>
-        <h2>What <span class="highlight">Our Clients Say</span></h2>
-    </div>
-    <div class="testimonials-list">
-        <div class="testimonial-card">
-            <div class="testimonial-rating">
-                <span>⭐⭐⭐⭐⭐</span>
-                <span class="rating-value">5.0</span>
+                <span class="testimonials-subtitle">Testimonial</span>
+                <h2>What <span class="highlight">Our Clients Say</span></h2>
             </div>
-            <h3>Gorgeous Bouquets!</h3>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-            <div class="testimonial-user">
-                <img src="./Assets/Jenny Wilson.jpg" alt="Jenny Wilson" class="testimonial-avatar">
-                <div>
-                    <span class="testimonial-name">Jenny Wilson</span>
-                    <span class="testimonial-role">Happy Customer</span>
+            <div class="testimonials-list">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span class="rating-value">5.0</span>
+                    </div>
+                    <h3>Gorgeous Bouquets!</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <div class="testimonial-user">
+                        <img src="./Assets/Jenny Wilson.jpg" alt="Jenny Wilson" class="testimonial-avatar">
+                        <div>
+                            <span class="testimonial-name">Jenny Wilson</span>
+                            <span class="testimonial-role">Happy Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span class="rating-value">5.0</span>
+                    </div>
+                    <h3>Beautiful Flowers!</h3>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                    <div class="testimonial-user">
+                        <img src="./Assets/Dianne Russell.jpg" alt="Dianne Russell" class="testimonial-avatar">
+                        <div>
+                            <span class="testimonial-name">Dianne Russell</span>
+                            <span class="testimonial-role">Happy Customer</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="testimonial-card">
-            <div class="testimonial-rating">
-                <span>⭐⭐⭐⭐⭐</span>
-                <span class="rating-value">5.0</span>
+            <div class="testimonial-pagination">
+                <span class="pagination-line active"></span>
+                <span class="pagination-line"></span>
+                <span class="pagination-line"></span>
+                <span class="pagination-line"></span>
+                <span class="pagination-line"></span>
             </div>
-            <h3>Beautiful Flowers!</h3>
-            <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-            <div class="testimonial-user">
-                <img src="./Assets/Dianne Russell.jpg" alt="Dianne Russell" class="testimonial-avatar">
-                <div>
-                    <span class="testimonial-name">Dianne Russell</span>
-                    <span class="testimonial-role">Happy Customer</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="testimonial-pagination">
-        <span class="pagination-line active"></span>
-        <span class="pagination-line"></span>
-        <span class="pagination-line"></span>
-        <span class="pagination-line"></span>
-        <span class="pagination-line"></span>
-    </div>
-    </section>
+        </section>
             
         <section class="blogs">
-          <div class="section-container">
-        <div class="blogs-header">
-            <div class="blogs-header-titles">
-                <span class="blogs-subtitle">News & Blogs</span>
-                <h2>Our Latest <span class="highlight">News & Blogs</span></h2>
+            <div class="section-container">
+                <div class="blogs-header">
+                    <div class="blogs-header-titles">
+                        <span class="blogs-subtitle">News & Blogs</span>
+                        <h2>Our Latest <span class="highlight">News & Blogs</span></h2>
+                    </div>
+                    <a href="#" class="blogs-view-all">View All Blogs</a>
+                </div>
+                <div class="blogs-list">
+                <article class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="./Assets/Blogcard1.png" alt="Wedding Bouquet" class="blog-image">
+                        <span class="blog-category">Wedding Bouquet</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-author">Jenny Alexander</span>
+                            <span class="blog-dot"></span>
+                            <span class="blog-date">13 Dec 2024</span>
+                        </div>
+                        <h3 class="blog-title">Choosing the Perfect Wedding Bouquet for Your Big Day</h3>
+                        <a href="#" class="blog-read-more"><u>Read More</u></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="./Assets/Blogcard2.jpg" alt="Anniversary Flowers" class="blog-image">
+                        <span class="blog-category">Anniversary Flowers</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-author">Jenny Alexander</span>
+                            <span class="blog-dot"></span>
+                            <span class="blog-date">12 Dec 2024</span>
+                        </div>
+                        <h3 class="blog-title">Celebrating Love: The Best Flowers for Every Anniversary</h3>
+                        <a href="#" class="blog-read-more"><u>Read More</u></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image-wrapper">
+                        <img src="./Assets/Blogcard3.jpg" alt="Bouquet Tips" class="blog-image">
+                        <span class="blog-category">Bouquet Tips</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-author">Jenny Alexander</span>
+                            <span class="blog-dot"></span>
+                            <span class="blog-date">11 Dec 2024</span>
+                        </div>
+                        <h3 class="blog-title">Top Tips for Designing Your Floral Bouquets for Maximum Impact</h3>
+                        <a href="#" class="blog-read-more"><u>Read More</u></a>
+                    </div>
+                </article>
             </div>
-            <a href="#" class="blogs-view-all">View All Blogs</a>
-        </div>
-        <div class="blogs-list">
-        <article class="blog-card">
-            <div class="blog-image-wrapper">
-            <img src="./Assets/Blogcard1.png" alt="Wedding Bouquet" class="blog-image">
-            <span class="blog-category">Wedding Bouquet</span>
-        </div>
-        <div class="blog-card-content">
-        <div class="blog-meta">
-            <span class="blog-author">Jenny Alexander</span>
-            <span class="blog-dot"></span>
-            <span class="blog-date">13 Dec 2024</span>
-        </div>
-        <h3 class="blog-title">Choosing the Perfect Wedding Bouquet for Your Big Day</h3>
-        <a href="#" class="blog-read-more"><u>Read More</u></a>
-        </div>
-        </article>
-        <article class="blog-card">
-    <div class="blog-image-wrapper">
-        <img src="./Assets/Blogcard2.jpg" alt="Anniversary Flowers" class="blog-image">
-        <span class="blog-category">Anniversary Flowers</span>
-    </div>
-    <div class="blog-card-content">
-        <div class="blog-meta">
-            <span class="blog-author">Jenny Alexander</span>
-            <span class="blog-dot"></span>
-            <span class="blog-date">12 Dec 2024</span>
-        </div>
-        <h3 class="blog-title">Celebrating Love: The Best Flowers for Every Anniversary</h3>
-        <a href="#" class="blog-read-more"><u>Read More</u></a>
-    </div>
-    </article>
-    <article class="blog-card">
-    <div class="blog-image-wrapper">
-        <img src="./Assets/Blogcard3.jpg" alt="Bouquet Tips" class="blog-image">
-        <span class="blog-category">Bouquet Tips</span>
-    </div>
-    <div class="blog-card-content">
-        <div class="blog-meta">
-            <span class="blog-author">Jenny Alexander</span>
-            <span class="blog-dot"></span>
-            <span class="blog-date">11 Dec 2024</span>
-        </div>
-        <h3 class="blog-title">Top Tips for Designing Your Floral Bouquets for Maximum Impact</h3>
-        <a href="#" class="blog-read-more"><u>Read More</u></a>
-    </div>
-    </article>
-    </div>
-    </section>
+        </section>
 
-    <section class="occasions-bar">
+        <section class="occasions-bar">
             <ul class="occasions-list">
-            <li class="occasion-item">
-                <img src="./Assets/Rose Icon.png" alt="Birthday Icon" class="occasion-icon">
-                <span>Birthday</span>
-            </li>
-            <li class="occasion-item">
-                <img src="./Assets/Rose Icon.png" alt="Weddings Icon" class="occasion-icon">
-                <span>Weddings</span>
-            </li>
-            <li class="occasion-item">
-                <img src="./Assets/Rose Icon.png" alt="Anniversary Icon" class="occasion-icon">
-                <span>Anniversary</span>
-            </li>
-            <li class="occasion-item">
-                <img src="./Assets/Rose Icon.png" alt="Thank You Icon" class="occasion-icon">
-                <span>Thank You</span>
-            </li>
-            <li class="occasion-item">
-                <img src="./Assets/Rose Icon.png" alt="Graduation Icon" class="occasion-icon">
-                <span>Graduation</span>
-            </li>
-            <li class="occasion-item">
-                <img src="./Assets/Rose Icon.png" alt="End Icon" class="occasion-icon">
-            </li>
-        </ul>
-    </div>
-    </section>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Birthday Icon" class="occasion-icon">
+                    <span>Birthday</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Weddings Icon" class="occasion-icon">
+                    <span>Weddings</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Anniversary Icon" class="occasion-icon">
+                    <span>Anniversary</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Thank You Icon" class="occasion-icon">
+                    <span>Thank You</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="Graduation Icon" class="occasion-icon">
+                    <span>Graduation</span>
+                </li>
+                <li class="occasion-item">
+                    <img src="./Assets/Rose Icon.png" alt="End Icon" class="occasion-icon">
+                </li>
+            </ul>
+        </div>
+        </section>
             
-         </section>
-          <section class="instagram-gallery">
-            
-         </section>
-          <section class="questions">
-            
-         </section>
-          <section class="newsletter">
-            
-         </section>
+        </section>
+        <!-- instagram section -->
+        <section class="instagram-gallery">
+        </section>
+        <!-- questions section -->
+        <section class="questions">
+            <h3>FAQs</h3>
+            <h2>Question? <span class="look">Look here.</span></h2>
+            <div class="promo-questions">
+                <div class="faq-list">
+                    <p>What types of flowers do you offer?</p>
+                    <p class="active">
+                        Do you offer same-day delivery?
+                        <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua euismod tempor incididunt ut labore...</small>
+                    </p>
+                    <p>Do you deliver outside your local area?</p>
+                    <p>What payment methods do you accept?</p>
+                    <p>Do you deliver to offices or event venues?</p>
+                    <p>How do I track my order?</p>
+                </div>
+                <div class="contact-card">
+                    <img src="images/faq-icon.png" alt="FAQ Icon">
+                    <h3>You have different questions?</h3>
+                    <p>Our team will answer all your questions.<br>We ensure a quick response.</p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <img src="images/feature1 (2).png" alt="Shipping Icon">
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping for order above $50</p>
+                </div>
+                <div class="feature">
+                    <img src="images/feature2 (2).png" alt="Flexible Payment Icon">
+                    <h3>Flexible Payment</h3>
+                    <p>Multiple secure payment options</p>
+                </div>
+                <div class="feature">
+                    <img src="images/feature3.png" alt="24x7 Support Icon">
+                    <h3>24×7 Support</h3>
+                    <p>We support online all days.</p>
+                </div>
+            </div>
+
+        </section>
 
     </main>
+    <footer class="footer-container">
+        <!-- newsletter section -->
+        <section class="newsletter">
+            <h4>Our Newsletter</h4>
+            <h2>Subscribe to Our Newsletter to Get <span>Updates on Our Latest Offers</span></h2>
+            <p>Get 20% off on your first order just by subscribing to our newsletter</p>
+            <div class="email-newspaper">
+                <input type="email" placeholder="Enter Email Address">
+                <button>Subscribe</button>
+            </div>
+        </section>
+        <!-- footer section -->
+        <div class="footer-section">
+            <div class="footer-main">
+                <div class="flower-shop">
+                    <div class="footer-logo">
+                        <img src="/images/footer-logo.png" alt="Footer logo">
+                        <h2>Flower Shop<span>.</span></h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com" target="_blank" rel="noopener"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-detail">
+                    <div class="footer-details footer-company">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                            <li>Career</li>
+                        </ul>
+                    </div>
+                    <div class="footer-details footer-customer">
+                        <h3>Customer Services</h3>
+                        <ul>
+                            <li>My Account</li>
+                            <li>Track Your Order</li>
+                            <li>Return</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    <div class="footer-details footer-info">
+                        <h3>Our Information</h3>
+                        <ul>
+                            <li>Privacy</li>
+                            <li>User Terms & Condition</li>
+                            <li>Return Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-details footer-contact">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li>+0123-456-789</li>
+                            <li>example@gmail.com</li>
+                            <li>8502 Preston Rd. <br> Inglewood, Maine <br> 98380</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>            
+            <hr>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 <span>Flower Shop Website.</span> All Rights Reserved.</p>
+                <p>English <i class="fa fa-caret-down"></i>|USD <i class="fa fa-caret-down"></i></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
