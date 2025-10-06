@@ -1237,12 +1237,16 @@ h1 span {
 }
 
 /* product section */
+.product-section {
+    margin: 0 auto;
+    padding: 4.5rem 0;
+}
 .product-section button{
     padding: 13px;
     padding-left: 17px;
     padding-right: 17px;
     background-color: var(--primary-color);
-    color:#E6C6F9;
+    color: var(--pink-color);
     border-radius: 30px;
     border: none;
 
@@ -1253,7 +1257,8 @@ h1 span {
     text-align: center;
 }
 .text h2{
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 18px;
 }
 .text h3{
     font-weight: normal;
@@ -1888,26 +1893,26 @@ font-weight: 500;
 }
 /*instagram section*/
 .instagram-gallery {
-    padding: 60px 20px;
+    padding: 80px 20px;
     background-color: var(--primary-background-color);
     text-align: center;
 }
- 
+
 .instagram-header h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 500;
 }
- 
+
 .instagram-header h2 {
     font-size: 36px;
     margin-bottom: 40px;
 }
- 
+
 .instagram-header .highlight {
     color: var(--primary-color);
 }
- 
+
 .instagram-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -1916,12 +1921,12 @@ font-weight: 500;
     max-width: 1200px;
     margin: 0 auto;
 }
- 
+
 .instagram-img {
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
 }
- 
+
 .instagram-img img {
     width: 100%;
     height: 100%;
